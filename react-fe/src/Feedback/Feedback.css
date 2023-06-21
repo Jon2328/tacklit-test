@@ -1,0 +1,134 @@
+.feedback-layout {
+  background-color: var(--main-bg);
+  height: auto;
+  min-height: 100%;
+}
+
+.feedback-container {
+  width: 100%;
+  height: 680px;
+  padding: 5rem 0px;
+  display: flex;
+  flex-direction: row;
+  max-width: 600px;
+  margin: 0px auto;
+}
+
+.rate-desc-container {
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.rate-desc-container > p {
+  color: var(--blue-font);
+  margin: 0px 0px 0px 2rem;
+  font-size: 1.75rem;
+}
+
+.hexagon-container {
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin: auto 0px;
+}
+
+.chosen-container {
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.avatar-container {
+  position: relative;
+  width: fit-content;
+  margin: 0px auto 0px 4rem;
+  transition: top 0.25s;
+}
+
+.avatar-side-tick {
+  border-bottom-width: 1.5rem;
+  border-bottom-style: solid;
+  border-bottom-color: var(--avatar-green);
+  border-left: 0.75rem solid transparent;
+  border-right: 0.75rem solid transparent;
+  width: 1rem;
+  transform: rotate(270deg) translateX(50%);
+  position: absolute;
+  left: -15%;
+  top: 50%;
+}
+
+.avatar-border {
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid var(--avatar-green);
+  max-width: 10rem;
+  margin: auto;
+  width: 100px;
+}
+
+.avatar {
+  object-fit: contain;
+  width: 100%;
+  transform: scale(1.1) translateY(0px);
+}
+
+.avatar-container.pick11 {
+  top: -2.75rem;
+}
+.avatar-container.pick10 {
+  top: 1.5rem;
+}
+.avatar-container.pick9 {
+  top: 5.75rem;
+}
+.avatar-container.pick8 {
+  top: 10rem;
+}
+.avatar-container.pick7 {
+  top: 14.25rem;
+}
+.avatar-container.pick6 {
+  top: 18.5rem;
+}
+.avatar-container.pick5 {
+  top: 23.5rem;
+}
+.avatar-container.pick4 {
+  top: 28.25rem;
+}
+.avatar-container.pick3 {
+  top: 32.5rem;
+}
+.avatar-container.pick2 {
+  top: 36.5rem;
+}
+.avatar-container.pick1 {
+  top: 41rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 5rem;
+}
+
+.button-container > button {
+  border-radius: 20px;
+  background-color: var(--btn-blue);
+  color: #ffffff;
+  width: 90%;
+  margin: auto;
+  font-size: 2rem;
+  transition: background-color 0.25s;
+  cursor: pointer;
+  max-width: 35rem;
+}
+
+.button-container > button.disabled {
+  background-color: #d8d8d8;
+}

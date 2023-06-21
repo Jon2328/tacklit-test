@@ -1,0 +1,206 @@
+.hexagon-upward {
+  display: flex;
+  flex-direction: column;
+  width: 5rem;
+  margin: auto;
+  visibility: hidden;
+}
+
+.hexagon-upward > * {
+  visibility: visible;
+}
+
+.hexagon-upward-top {
+  border-bottom-width: 1.5rem;
+  border-bottom-style: solid;
+  border-bottom-color: inherit;
+  border-left: 2.5rem solid transparent;
+  border-right: 2.5rem solid transparent;
+}
+
+.hexagon-upward-body {
+  background-color: inherit;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hexagon-upward-body > p {
+  transform: translateY(-0.25rem);
+}
+
+.hexagon-upward-bot {
+  height: 1.5rem;
+  background-color: inherit;
+  position: relative;
+}
+
+.hexagon-upward-bot::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: -2rem;
+  height: 2rem;
+  border-bottom: 1.5rem solid var(--main-bg);
+  border-left: 2.5rem solid transparent;
+  border-right: 2.5rem solid transparent;
+}
+
+.hexagon-full {
+  display: flex;
+  flex-direction: column;
+  width: 5rem;
+  margin: auto;
+  visibility: hidden;
+}
+
+.hexagon-full > * {
+  visibility: visible;
+}
+
+.hexagon-full-top {
+  border-bottom-width: 2rem;
+  border-bottom-style: solid;
+  border-bottom-color: inherit;
+  border-left: 2.5rem solid transparent;
+  border-right: 2.5rem solid transparent;
+}
+
+.hexagon-full-body {
+  background-color: inherit;
+  text-align: center;
+  color: #ffffff;
+ 
+}
+
+.hexagon-full-bot {
+  border-top-width: 2rem;
+  border-top-style: solid;
+  border-top-color: inherit;
+  border-left: 2.5rem solid transparent;
+  border-right: 2.5rem solid transparent;
+}
+
+.hexagon-downward {
+  display: flex;
+  flex-direction: column;
+  width: 5rem;
+  margin: auto;
+  visibility: hidden;
+}
+
+.hexagon-downward > * {
+  visibility: visible;
+}
+
+.hexagon-downward-top {
+  height: 1.5rem;
+  background-color: inherit;
+  position: relative;
+}
+
+.hexagon-downward-top::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0rem;
+  height: 2rem;
+  border-top: 1.5rem solid var(--main-bg);
+  border-left: 2.5rem solid transparent;
+  border-right: 2.5rem solid transparent;
+}
+
+.hexagon-downward-body {
+  background-color: inherit;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hexagon-downward-body > p {
+  transform: translateY(0.25rem);
+}
+
+.hexagon-downward-bot {
+  border-top-width: 1.5rem;
+  border-top-style: solid;
+  border-top-color: inherit;
+  border-left: 2.5rem solid transparent;
+  border-right: 2.5rem solid transparent;
+}
+
+.hexagon-container p {
+  margin: 0px;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 10px black;
+}
+
+.hexagon-container > div > div {
+  margin-top: -1rem;
+  cursor: pointer;
+}
+
+.hexagon11 {
+  background-color: var(--hexagon11);
+  color: var(--hexagon11);
+  position: relative;
+  z-index: 10;
+}
+.hexagon10 {
+  background-color: var(--hexagon10);
+  color: var(--hexagon10);
+  position: relative;
+  z-index: 11;
+}
+.hexagon9 {
+  background-color: var(--hexagon9);
+  color: var(--hexagon9);
+  position: relative;
+  z-index: 12;
+}
+.hexagon8 {
+  background-color: var(--hexagon8);
+  color: var(--hexagon8);
+  position: relative;
+  z-index: 13;
+}
+.hexagon7 {
+  background-color: var(--hexagon7);
+  color: var(--hexagon7);
+  position: relative;
+  z-index: 14;
+}
+.hexagon6 {
+  background-color: var(--hexagon6);
+  color: var(--hexagon6);
+  position: relative;
+  z-index: 15;
+}
+.hexagon5 {
+  background-color: var(--hexagon5);
+  color: var(--hexagon5);
+  position: relative;
+  z-index: 15;
+}
+.hexagon4 {
+  background-color: var(--hexagon4);
+  color: var(--hexagon4);
+  position: relative;
+  z-index: 13;
+}
+.hexagon3 {
+  background-color: var(--hexagon3);
+  color: var(--hexagon3);
+  position: relative;
+  z-index: 12;
+}
+.hexagon2 {
+  background-color: var(--hexagon2);
+  color: var(--hexagon2);
+  position: relative;
+  z-index: 11;
+}
+.hexagon1 {
+  background-color: var(--hexagon1);
+  color: var(--hexagon1);
+  position: relative;
+  z-index: 10;
+}

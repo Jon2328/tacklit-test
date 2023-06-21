@@ -1,0 +1,48 @@
+body {
+  background-color: white;
+  color: black;
+}
+
+.result-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.chart-container {
+  overflow: auto;
+  margin-top: 2rem;
+}
+
+.analysis-container {
+  padding: 0rem 1rem;
+}
+
+.analysis-container > p {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.analysis-pointer {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.analysis-pointer > li {
+  background-image: url(./images/analysis_pointer.svg);
+  background-repeat: no-repeat;
+  padding-left: 2.5rem;
+  background-position: top left;
+  background-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.analysis-title {
+  color: var(--blue-font);
+  font-weight: bold;
+  margin: 0.25rem 0px;
+}
+
+.analysis-desc {
+  margin: 0px;
+  color: #9c9c9c;
+}
