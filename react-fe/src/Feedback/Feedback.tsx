@@ -1,10 +1,29 @@
-import { useState } from 'react'
 import './Feedback.css'
 import Hexagon from '../../components/Hexagon/Hexagon'
 import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from "react-router-dom";
+import axios from 'axios'
+import { userSelectScore, setIsSubmitted } from '../../src/store/slice/feedback';
 
 function Feedback() {
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
   const selectedScore = useSelector((state: any) => state.feedbackSlice.selectedScore)
+  const isSubmitted = useSelector((state: any) => state.feedbackSlice.isSubmitted)
+  async function submitScore() {
+    if (selectedScore) {
+      try {
+        await axios.post('http://localhost:3000/feedback/score', {
+          score: selectedScore
+        })
+        dispatch(userSelectScore(null))
+        dispatch(setIsSubmitted(true))
+      } catch(err) {
+        console.log(err)
+      }
+    }
+
+  }
 
   return (
     <>
@@ -33,8 +52,8 @@ function Feedback() {
           </div>
         </div>
         <div className='button-container'>
-          <button className={selectedScore? '' : 'disabled'}>Submit</button>
-          <button>Generate Report</button>
+          <button className={(selectedScore? '' : 'disabled') + (isSubmitted? ' submitted': '')} onClick={submitScore}>{isSubmitted? 'Submitted' : 'Submit'}</button>
+          <button onClick={() => navigate('./result')}>Generate Report</button>
         </div>
       </div>
     </>

@@ -46,3 +46,20 @@ body {
   margin: 0px;
   color: #9c9c9c;
 }
+
+.analysis-container > button {
+  border-radius: 20px;
+  background-color: var(--btn-blue);
+  color: #ffffff;
+  width: 90%;
+  margin: 2rem 0px 0px 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  transition: background-color 0.25s;
+  cursor: pointer;
+  max-width: 35rem;
+}
+
+.reset-button.reset {
+  background-color: var(--avatar-green);
+}
