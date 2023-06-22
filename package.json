@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "scripts": {
+    "dev": "run-p dev:fe dev:be",
+    "dev:fe": "cd react-fe && yarn dev",
+    "dev:be": "cd node-be && yarn dev"
+  }
+}
