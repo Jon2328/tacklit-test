@@ -37,6 +37,14 @@ router.post('/feedback/score', async (ctx, next) => {
 
   await db.query('insert into feedback_score (score) VALUES ($1)', [payload.score])
   ctx.body = 'Feedback received'
+  next()
+})
+
+// Reset feedback score
+router.delete('/feedback/reset-score', async (ctx, next) => {
+  await db.query('UPDATE feedback_score SET is_deleted = 1')
+  ctx.body = 'Feedback deleted'
+  next()
 })
 
 app
