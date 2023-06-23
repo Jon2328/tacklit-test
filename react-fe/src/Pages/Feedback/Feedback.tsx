@@ -1,9 +1,9 @@
 import './Feedback.css'
-import Hexagon from '../../components/Hexagon/Hexagon'
+import Hexagon from '../../../components/Hexagon/Hexagon'
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from "react-router-dom";
 import axios from 'axios'
-import { userSelectScore, setIsSubmitted } from '../../src/store/slice/feedback';
+import { userSelectScore, setIsSubmitted } from '../../../src/store/slice/feedback';
 
 function Feedback() {
   const navigate = useNavigate()

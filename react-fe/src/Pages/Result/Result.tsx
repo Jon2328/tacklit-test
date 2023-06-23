@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import './Result.css'
-import Chart from '../../components/Chart/Chart.tsx'
+import Chart from '../../../components/Chart/Chart.tsx'
 import { useDispatch, useSelector } from 'react-redux';
-import { getFeedbackList, setIsSubmitted } from '../../src/store/slice/feedback';
+import { getFeedbackList, setIsSubmitted } from '../../store/slice/feedback.ts';
 import { useNavigate } from "react-router-dom";
 import axios from 'axios'
 

@@ -6,8 +6,8 @@ import {
 } from "react-router-dom";
 import { Provider } from 'react-redux'
 import store from './store/index.ts'
-import Feedback from './Feedback/Feedback.tsx'
-import Result from './Result/Result.tsx'
+import Feedback from './Pages/Feedback/Feedback.tsx'
+import Result from './Pages/Result/Result.tsx'
 
 const router = createBrowserRouter([
   {
