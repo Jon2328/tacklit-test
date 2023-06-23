@@ -34,7 +34,7 @@ function Result() {
     const meanVal = sum / feedbackList.length
     setMax(tempMax)
     setMin(tempMin)
-    setMean(meanVal)
+    setMean(Math.round( meanVal * 10 + Number.EPSILON ) / 10)
     const sdVal = Math.sqrt(feedbackList.map(( score: number) => Math.pow(score - meanVal, 2)).reduce((a: number, b: number) => a + b, 0) / feedbackList.length)
     setSd(Math.round( sdVal * 10 + Number.EPSILON ) / 10)
   }, [feedbackList]);
