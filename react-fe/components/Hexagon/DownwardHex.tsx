@@ -1,5 +1,3 @@
-import React from 'react'
-
 function DownwardHex(props: { score: number, clickFunc: Function}) {
   return (
   <div className={'hexagon-downward hexagon' + props.score} onClick={() => {props.clickFunc(props.score)}}>

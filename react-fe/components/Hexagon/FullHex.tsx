@@ -1,5 +1,3 @@
-import React from 'react'
-
 function FullHex(props: { score: number, clickFunc: Function}) {
   return (
     <div className={'hexagon-full hexagon' + props.score} onClick={() => {props.clickFunc(props.score)}}>
